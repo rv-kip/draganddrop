@@ -88,7 +88,6 @@ app.get("/postupload", function (request, response) {
     logger.info('filenames_arr', filenames_arr);                                              
     page_options.filenames = filenames_arr;
 
-
     response.render('postupload.jade', page_options);
 }); 
 

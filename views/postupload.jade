@@ -1,2 +1,4 @@
 extends layout
 block content
+	- each file in filenames
+		img(src='/uploads/#{file}')
