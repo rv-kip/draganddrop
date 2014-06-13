@@ -1,0 +1,11 @@
+extends layout
+block content
+  script(src="/javascripts/dropzone.js")
+  script(src="/javascripts/dropzone_options.js")
+  link(rel='stylesheet', href='/stylesheets/dropzone.css', type="text/css")
+
+  h4 Welcome to #{title}
+  body
+    form(method="post", action="/upload", enctype="multipart/form-data" class="dropzone" id="mydz")
+        .dropzone-previews
+        input.submit-all(name="Submit Files" type="submit")

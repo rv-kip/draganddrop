@@ -1,0 +1,21 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start"       : "node app.js",
+    "console"     : "node app.js | ./node_modules/bunyan/bin/bunyan",
+    "debug"       : "DEBUG=express:* node app.js"
+  },
+  "dependencies": {
+    "jade": "*",
+    "express": "^4.2.0",
+    "body-parser": "^1.2.0",
+    "errorhandler": "^1.0.1",
+    "method-override": "^1.0.0",
+    "morgan": "^1.1.1",
+    "formidable": "^1.0.14",
+    "multer": "0.0.7",
+    "bunyan": "^0.23.1"
+  }
+}
